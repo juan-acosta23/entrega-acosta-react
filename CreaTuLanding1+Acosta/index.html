@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoStore - Tu Tienda de Motocicletas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Brand -->
+                <div class="brand-container">
+                    <div class="brand-wrapper">
+                        <h1 class="brand-text">MotoStore</h1>
+                        <div class="brand-underline"></div>
+                    </div>
+                </div>
+
+
+                <!-- User Actions -->
+                <div class="user-actions">
+                    <div class="desktop-actions">
+                    </div>
+                    
+                    <!-- Cart Widget -->
+                    <div id="cartWidget" class="cart-widget">
+                        <div class="cart-container">
+                            <i class="fas fa-shopping-cart cart-icon"></i>
+                            <span id="cartCount" class="cart-count">3</span>
+                        </div>
+                        <div class="cart-tooltip">
+                            <span id="cartTooltipText">3 productos en el carrito</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile Menu Button -->
+                    <div class="mobile-menu"> 
+                        <button id="mobileMenuBtn" class="mobile-menu-btn">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenuContainer" class="mobile-menu-container">
+                <div class="mobile-search">
+                    <div class="search-wrapper">
+                        <input type="text" id="mobileSearchInput" placeholder="Buscar motos, cascos, repuestos..." class="search-input">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <!-- Status Bar -->
+                    <div class="status-bar">
+                        <div class="visitors-count">
+                            <div class="status-dot"></div>
+                            <span id="visitorCount">847 motociclistas navegando ahora</span>
+                        </div>
+                        <div class="current-time">
+                            <span id="currentTime"></span>
+                        </div>
+                    </div>
+                    
+                    <!-- Main Title -->
+                    <h1 class="hero-title">¡Bienvenidos a MotoStore!</h1>
+                    
+                    <!-- Subtitle -->
+                    <p class="hero-subtitle">
+                        Tu pasión por las motos empieza aquí. Descubre las mejores motocicletas, equipamiento y accesorios.
+                    </p>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="cta-buttons">
+                        <button class="btn-primary">Ver Motocicletas</button>
+                        <button class="btn-secondary">Ofertas Especiales</button>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number orange">15+</div>
+                            <div class="stat-label">Años de Experiencia</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number green">+5K</div>
+                            <div class="stat-label">Motos Vendidas</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number red">100%</div>
+                            <div class="stat-label">Garantía Premium</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating Elements -->
+            <div class="floating-element element-1"></div>
+            <div class="floating-element element-2"></div>
+            <div class="floating-element element-3"></div>
+        </div>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">Productos Más Populares</h2>
+                
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-content">
+                            <div class="product-icon">🏍️</div>
+                            <h3 class="product-name">Yamaha YZF-R1</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9)</span>
+                            </div>
+                            <p class="product-price">$16,999</p>
+                            <button class="product-btn">Ver Detalles</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-content">
+                            <div class="product-icon">🪖</div>
+                            <h3 class="product-name">Casco AGV Pista</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.8)</span>
+                            </div>
+                            <p class="product-price">$899</p>
+                            <button class="product-btn">Ver Detalles</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-content">
+                            <div class="product-icon">🧥</div>
+                            <h3 class="product-name">Chaqueta Alpinestars</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.7)</span>
+                            </div>
+                            <p class="product-price">$299</p>
+                            <button class="product-btn">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Features -->
+        <section class="service-features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon orange">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3 class="feature-title">Entrega Rápida</h3>
+                        <p class="feature-desc">Tu moto lista en 48 horas</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon green">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Garantía Total</h3>
+                        <p class="feature-desc">Respaldo completo en todas las motos</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon red">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="feature-title">Servicio Técnico</h3>
+                        <p class="feature-desc">Mantenimiento especializado</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Info -->
+        <section class="footer-info">
+            <div class="container">
+                <p>Próximamente: Catálogo completo con filtros por marca, cilindrada, precio y más funcionalidades</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
